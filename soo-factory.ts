@@ -1,5 +1,5 @@
-import { NaijaCurrencyFormat } from './factory-pattern/concrete-formats';
-import CurrencyFormatterFactory from './factory-pattern/CurrencyFormatterFactory';
+import { NaijaCurrencyFormat } from './factory/concrete-formats';
+import CurrencyFormatterFactory from './factory/CurrencyFormatterFactory';
 
 const currencyFormat = new NaijaCurrencyFormat();
 const naijaCurrencyFormatter = CurrencyFormatterFactory.create(currencyFormat);
