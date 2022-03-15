@@ -1,9 +1,9 @@
 import { CurrencyFormat } from './concrete-formats';
 
 export default class CurrencyFormatterFactory {
-	static create(countyFormat: CurrencyFormat) {
-		return new Intl.NumberFormat(countyFormat.locale, {
-			currency: countyFormat.currency,
+	static create(currencyFormat: CurrencyFormat) {
+		return new Intl.NumberFormat(currencyFormat.locale, {
+			currency: currencyFormat.currency,
 			style: 'currency',
 		});
 	}
